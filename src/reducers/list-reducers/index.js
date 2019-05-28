@@ -46,7 +46,6 @@ const listReducers = (state = peopleState, { type, payload, prevPeople, newPeopl
         case 'FETCH_DATA_START': return []
         case 'FETCH_DATA_SUCCESS': return [...state, ...payload]
         case 'FETCH_DATA_FAILURE': {
-            console.log(payload)
             return []
         }
         case 'ADD_PEOPLE': return addPeople(state, payload)
@@ -76,7 +75,6 @@ const checkedPeople = (people, item) => {
 
 const uncheckedPeople = (people, item) => {
     const idx = people.findIndex( i => i === item)
-    console.log(idx)
     return [
         ...people.filter(i => i.id !== item.id)
     ]

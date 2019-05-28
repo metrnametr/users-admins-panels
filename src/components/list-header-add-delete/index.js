@@ -14,7 +14,6 @@ const listHeaderAddDelete = ({
     const style = {
         display: (length > 1) ? 'inline' : 'none'
     }
-    console.log(deleteItems)
     return(
         <div className='header-list-left'>
             <div className='table-name'> {(tableName) ? tableName : 'users'} </div>

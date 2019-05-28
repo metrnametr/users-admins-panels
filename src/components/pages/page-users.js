@@ -15,7 +15,6 @@ class PageUsers extends Component{
             display: (isOpenModalInput || isOpenModalSetting) ? 'block' : 'none'
         }
         const classThemes = `main ${classFonts} ${classTheme}`
-        console.log(classTheme)
         return(
             <div className={classThemes}>
               <PageHeader/>

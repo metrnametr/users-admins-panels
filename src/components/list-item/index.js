@@ -28,7 +28,6 @@ class ListItem extends Component{
 
             editInputAction,
             toggleInputAction } = this.props
-            console.log(people.image)
         return(
             <li className='item-list'>
                 <div className='information'>

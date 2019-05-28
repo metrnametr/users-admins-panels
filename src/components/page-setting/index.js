@@ -29,10 +29,7 @@ class PageSetting extends Component{
     }
     componentDidUpdate(prevProps){
         if(this.props.setting !== prevProps.setting){
-            console.log(prevProps.setting)
-            console.log(this.props.setting)
         if(prevProps.setting.tableName || prevProps.setting.tableName || prevProps.setting.themeStyle){
-            console.log('qweqwe')
             this.props.localApi.setStorage('setting', (prevProps.setting) ? {...prevProps.setting, isOpen: false} : null)
 
         }

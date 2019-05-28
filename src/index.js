@@ -9,9 +9,7 @@ import store from './store'
 
 const localApi = new LocalApi()
 
-//localApi.setStorage('users',  [{firstName: 'Aleewex', lastName: 'Dostoevski', country: 'UK', id: 1}, {firstName: 'Aleewex', lastName: 'Dostoevski', country: 'UK', id: 1}])
 
-console.log(localApi.getStorage())
 ReactDOM.render(
 <Provider store={store}>
     <ListServiceProvider value={localApi}>

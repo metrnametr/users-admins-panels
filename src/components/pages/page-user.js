@@ -15,7 +15,6 @@ class PageUser extends Component {
 
     getItems = () => {
         const { items, idx } = this.state
-        console.log(items)
         return items.find( item => item.id === Number(idx))
     }
     render(){

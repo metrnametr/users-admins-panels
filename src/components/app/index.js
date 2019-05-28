@@ -18,7 +18,6 @@ class App extends Component{
                 />
                 <Route path='/:id' render={({match}) => {
                   const id = match.params.id;
-                  console.log(match)
                   return(<PageUser idx={id}/>)
               }} exact/>
           </Switch>

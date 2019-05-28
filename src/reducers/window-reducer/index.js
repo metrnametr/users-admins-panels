@@ -28,7 +28,6 @@ const toggleSettingReducer = (state = toggleSettingState, { type, payload}) => {
         case 'FETCH_SETTING_START': return {}
         case 'FETCH_SETTING_FAILUR': return {}
         case 'FETCH_SETTING_SUCCESS': {
-            console.log(payload)
             return {...state, ...payload}
         }
         case 'TOGGLE_SETTING': return {...state, isOpen: payload};

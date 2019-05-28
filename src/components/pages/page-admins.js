@@ -17,7 +17,6 @@ const pageAdmins = () => {
     }
 
     const string = 'страшно';
-    console.log(string)
     return(
         <div style={thisStyle}>
             <h1 style={hStyle} >{string}</h1>
