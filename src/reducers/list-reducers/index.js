@@ -74,7 +74,6 @@ const checkedPeople = (people, item) => {
 }
 
 const uncheckedPeople = (people, item) => {
-    const idx = people.findIndex( i => i === item)
     return [
         ...people.filter(i => i.id !== item.id)
     ]
