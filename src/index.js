@@ -1,12 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './components/app'
+import { BrowserRouter as Router} from 'react-router-dom'
+import { Provider } from 'react-redux'
+import { ListServiceProvider } from './components/list-context'
+import LocalApi from './local-api'
+import store from './store'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const localApi = new LocalApi()
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//localApi.setStorage('users',  [{firstName: 'Aleewex', lastName: 'Dostoevski', country: 'UK', id: 1}, {firstName: 'Aleewex', lastName: 'Dostoevski', country: 'UK', id: 1}])
+
+console.log(localApi.getStorage())
+ReactDOM.render(
+<Provider store={store}>
+    <ListServiceProvider value={localApi}>
+        <Router>
+            <App/>
+        </Router>
+    </ListServiceProvider>
+</Provider>, document.querySelector('#root'))

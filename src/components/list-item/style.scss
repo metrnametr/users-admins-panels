@@ -1,0 +1,123 @@
+li{
+  list-style: none;
+}
+.item-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #cccccc;
+    .information{
+        display:flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    label.container {
+        display: block;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* Hide the browser's default checkbox */
+      label.container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      
+      /* Create a custom checkbox */
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        border: 1px solid black;
+        background-color: transparent;
+      }
+      
+      /* On mouse-over, add a grey background color */
+      label.container:hover input ~ .checkmark {
+        background-color: transparent;
+        border: 1px solid black;
+      }
+      
+      /* When the checkbox is checked, add a blue background */
+      label.container input:checked ~ .checkmark {
+        background-color: transparent;
+      }
+      
+      /* Create the checkmark/indicator (hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      
+      /* Show the checkmark when checked */
+      label.container input:checked ~ .checkmark:after {
+        display: block;
+      }
+      
+      /* Style the checkmark/indicator */
+      label.container .checkmark:after {
+        left: 9px;
+        top: -10px;
+        width: 5px;
+        height: 20px;
+        border: solid #0482bd;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      
+      
+    .people-names{
+        font-weight: 500;
+       a{
+        color: black;
+       }
+    }
+    .people-country{
+        color: #0482bd;
+        font-weight: 500;
+    }
+    .people-min-img{
+        width: 40px;
+        margin: 0 10px;
+        img{
+            width:100%;
+        }
+    }
+    &:first-of-type{
+        border-top: 1px solid #cccccc;
+    }
+    .btn{
+        text-transform: uppercase;
+        color: white;
+        font-size: .9em;
+        margin-left: 15px;;
+        padding: 5px 25px;
+    }
+    .btn-duplicate{
+        background: #9ccc1c;
+    }
+    .btn-edit{
+        background: #57d1ad;
+    }
+    .btn-delete{
+        background: #f14f5b;
+    }
+}

@@ -1,0 +1,19 @@
+$backgroundBlue: #5ec4e2;
+@import '../sass-utils/themes.scss';
+@import '../sass-utils/fonts.scss';
+.main{
+    min-height: 100vh;
+    background: #f1f1f1;
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    background: black;
+    opacity: .8;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height: 100vh;
+}

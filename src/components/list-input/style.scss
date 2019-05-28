@@ -1,0 +1,37 @@
+.modal-window{
+    -webkit-box-shadow: -2px 15px 19px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 15px 19px -4px rgba(0,0,0,0.75);
+    box-shadow: -2px 15px 19px -4px rgba(0,0,0,0.75);
+    z-index: 99;
+    .fa{
+        cursor: pointer;
+    }
+        .shadow{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: black;
+        opacity: .4;
+        top: 0;
+        left: 0;
+    }
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    border-radius: 10px;
+    background: white;
+    .modal-header{
+        background: #5ec4e2;
+        color: white;
+        z-index: 99;
+    }
+    .form-input{
+        padding: 0 20px;
+        padding-top: 10px;
+        z-index: 99;
+        label{
+            font-weight: 500;
+        }
+    }
+}

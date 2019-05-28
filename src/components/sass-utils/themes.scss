@@ -1,0 +1,72 @@
+.my-theme{
+    .icon-setting{
+        .fa{
+            background: #5ec4e2;
+        }
+    }
+    .container-fluid, .modal-window{
+        .close{
+            .fa{
+                color: white;
+            }
+        }
+    .header-color{
+        background:#5ec4e2;
+    }
+        .btn{
+            color: white;
+            text-transform: uppercase;
+        }
+        .btn-duplicate{
+            background:#9ccc1c;
+        }
+        .btn-edit{
+            background: #57d1ad;
+        }
+        .btn-delete{
+            background: #f14f5b;
+        }
+        .btn-add{
+            background: #1c8898;
+        }
+        
+    }
+}
+
+.your-theme{
+    .container.header-color{
+        background: black;
+    }
+    .icon-setting{
+        .fa{
+            background: black;
+        }
+    }
+    .container, .modal-window{
+        .close{
+            .fa{
+                color: white;
+            }
+        }
+        .header-color{
+            background: black;
+        }
+        .btn{
+            color: white;
+            text-transform: uppercase;
+        }
+        .btn-duplicate{
+            background:#70ee65;
+        }
+        .btn-edit{
+            background: #4ee2b3;
+        }
+        .btn-delete{
+            background: #ad454c;
+        }
+        .btn-add{
+            background: #4ddcf1;
+        }
+        
+    }
+}

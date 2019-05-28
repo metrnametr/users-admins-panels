@@ -1,0 +1,27 @@
+.page-user{
+    min-height: 100vh;
+    background: #2ddfd6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img{
+        width: 300px;
+    }
+    .page-people-names, .page-people-country{
+        font-size: 1.5em;
+        text-transform: uppercase;
+    }
+    .page-people-names{
+        color: white;
+        margin-top: 15px;
+        letter-spacing: 1px;
+        span:first-of-type{
+            margin-right: 10px;
+        }
+    }
+    .page-people-country{
+        color: #086e8d;
+        font-size: 2em;
+    }
+}

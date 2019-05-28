@@ -1,0 +1,10 @@
+.header-list-right{
+    display: flex;
+    .search-container{
+        margin-left: 30px;
+    }
+    .form-control, select{
+        border-radius: 4px;
+        width: 180px;
+    }
+}
